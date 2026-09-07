@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #222;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    padding: 64px 40px 50px;
+    background-color: #f6f5f2;
+}
+
+/* ====================
+   HEADER
+==================== */
+
+header {
+    margin-bottom: 75px;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 1700;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+header p {
+    color: gray;
+    font-size: 11px;
+    text-align: center;
+
+}
+
+/* ====================
+   WEATHER
+==================== */
+
+.weather-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+}
+
+.weather {
+    width: 100%;
+}
+
+.weather-title {
+    height: 24px;
+    color: gray;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.weather-line {
+    width: 100%;
+    height: 1px;
+    background: gray;
+    margin-bottom: 25px;
+}
+
+/* 天気画像・アイコンを入れる場所 */
+.weather-box {
+    width: 100%;
+    height: 317px;
+    border: 1px solid gray;
+    background: transparent;
+}
+
+/* ====================
+   WEATHER INFO
+==================== */
+
+.weather-info {
+    position: relative;
+    margin-top: 18px;
+    height: 65px;
+}
+
+.temperature {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.low {
+    position: absolute;
+    left: 49px;
+    top: 4px;
+
+    color: gray;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 11px;
+}
+
+.condition {
+    position: absolute;
+    left: 0;
+    top: 34px;
+    color: gray;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+.percent {
+    position: absolute;
+    left: 0;
+    top: 51px;
+
+    color: gray;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 520px;
+        min-height: 812px;
+    }
+}
